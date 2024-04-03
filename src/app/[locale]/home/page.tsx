@@ -1,13 +1,11 @@
-"use client"
+"use client";
 import React from "react";
 import CardMenu from "@/components/card-menu";
 import { useTranslations } from "next-intl";
 
-
 type Props = {};
 
-
-export default function HomeProduct({ }: Props) {
+export default function HomeProduct({}: Props) {
   const t = useTranslations("Menu");
   return (
     <>

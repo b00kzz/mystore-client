@@ -22,7 +22,7 @@ export function MainNav({
     },
     {
       name: t("tea-custom"),
-      path: "product/custom",
+      path: "custom",
     },
   ];
 
