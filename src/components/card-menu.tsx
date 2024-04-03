@@ -20,22 +20,22 @@ export default function CardMenu({ }: Props) {
          */}
       {/* <CardDescription></CardDescription> */}
       <CardContent className="p-6">
-        <div className="grid gap-4 sm: grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           <Button className="h-28">
             {/* <SquareUser className="w-10 h-10"/> */}
-            <Image className="pb-4" alt="key" src={"/mlikfesh.png"} width={100} height={100} />
+            <Image className="pb-4 hover:scale-125" alt="key" src={"/mlikfesh.png"} width={100} height={100} />
             <CardContent className="font-bold ">{t("menuone")}</CardContent>
           </Button>
           <Button className="h-28">
-            <Image className="pb-6" alt="key" src={"/fuit.png"} width={80} height={80} />
+            <Image className="pb-6 hover:scale-125" alt="key" src={"/fuit.png"} width={80} height={80} />
             <CardContent>{t("menutwo")}</CardContent>
           </Button>
           <Button className="h-28">
-            <Image className="pb-8" alt="key" src={"/promotion.png"} width={100} height={70} />
+            <Image className="pb-8 hover:scale-125" alt="key" src={"/promotion.png"} width={100} height={70} />
             <CardContent>{t("menuthree")}</CardContent>
           </Button>
           <Button className="h-28">
-            <Image className="pb-3" alt="key" src={"/topping.png"} width={120} height={100} />
+            <Image className="pb-3 hover:scale-125" alt="key" src={"/topping.png"} width={120} height={100} />
             <CardContent>{t("menufour")}</CardContent>
           </Button>
 

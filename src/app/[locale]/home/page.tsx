@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import CardProduct from "@/components/card-menu";
+import CardMenu from "@/components/card-menu";
 import { useTranslations } from "next-intl";
 
 
@@ -37,7 +37,8 @@ export default function HomeProduct({ }: Props) {
         </div>
       </div> */}
       <div>
-        <CardProduct />
+        <p className="font-bold p-6">MENU</p>
+        <CardMenu />
       </div>
     </>
   );
