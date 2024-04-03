@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -113,9 +112,8 @@
   .main-layout {
     margin-top: 8px;
     /* background: #71717a; */
-    @apply rounded-sm
+    @apply rounded-sm;
   }
-
 
   .logo-ds {
     font-weight: 900;
@@ -123,6 +121,9 @@
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-
+  }
+  .fix-img {
+    aspect-ratio: 10/18;
+    object-fit: contain;
   }
 }
