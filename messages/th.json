@@ -1,0 +1,43 @@
+{
+  "Index": {
+    "title": "หน้าแรก",
+    "loggedIn": "Logged in as {username}",
+    "loggedOut": "You are logged out.",
+    "login": "Login",
+    "logout": "Logout",
+    "secret": "Secret page for logged in users"
+  },
+  "LocaleLayout": {
+    "title": "next-intl with Auth.js example"
+  },
+  "Login": {
+    "title": "ล็อกอิน",
+    "username": "ชื่อผู้ใช้",
+    "password": "รหัสผ่าน",
+    "submit": "เข้าสูระบบ",
+    "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Switch to {locale, select, th {Thai} en {English} other {Unknown}}"
+  },
+  "Secret": {
+    "title": "Secret page",
+    "description": "This page is only visible for logged in users."
+  },
+  "NavBar": {
+    "setting": "ตั้งค่า",
+    "profile": "ข้อมูลของฉัน",
+    "logout": "ออกจากระบบ",
+    "home": "หน้าแรก",
+    "products": "รายการสินค้า",
+    "tea-custom": "เมนูสไตล์คุณ"
+  
+},
+"Menu": {
+    "title" : "เมูนู",
+    "menuone": "นมสด",
+    "menutwo": "ผลไม้",
+    "menuthree":"โปรโมชั่น",
+    "menufour":"ท็อปปิ้ง"
+  }
+}

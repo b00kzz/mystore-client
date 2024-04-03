@@ -1,0 +1,42 @@
+{
+  "Index": {
+    "title": "Home",
+    "loggedIn": "Logged in as {username}",
+    "loggedOut": "You are logged out.",
+    "login": "Login",
+    "logout": "Logout",
+    "secret": "Secret page for logged in users"
+  },
+  "LocaleLayout": {
+    "title": "next-intl with Auth.js example"
+  },
+  "Login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "submit": "Login",
+    "error": "{error, select, CredentialsSignin {Invalid username or password} other {Unknown error}}"
+  },
+  "LocaleSwitcher": {
+    "switchLocale": "Switch to {locale, select, th {Thai} en {English} other {Unknown}}"
+  },
+  "Secret": {
+    "title": "Secret page",
+    "description": "This page is only visible for logged in users."
+  },
+  "NavBar": {
+    "setting": "Setting",
+    "profile": "Profile",
+    "logout": "Log out",
+    "home": "Home",
+    "products": "Products",
+    "tea-custom": "Custom menu"
+  },
+  "Menu": {
+    "title" : "Menu",
+    "menuone": "Mlik fesh",
+    "menutwo": "Fruit",
+    "menuthree":"Promotion",
+    "menufour":"Topping"
+  }
+}
