@@ -14,8 +14,10 @@ export default function HomeProduct({}: Props) {
         <div className="flex justify-center items-center">
           <CarouselHome />
         </div>
-        <p className="font-bold p-6">MENU</p>
-        <CardMenu />
+        <div>
+          <p className="font-bold p-6">MENU</p>
+          <CardMenu />
+        </div>
       </div>
     </>
   );
