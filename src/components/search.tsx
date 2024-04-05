@@ -1,17 +1,12 @@
 import { Input } from "@/components/ui/input";
-import { useState } from "react";
+import { useSearch } from "./searchContext";
 
-type SearchProps = {
-  onSearch: (value: string) => void;
-};
-
-export function Search({ onSearch }: SearchProps) {
-  const [searchTerm, setSearchTerm] = useState<string>("");
+export function Search() {
+  const { searchTerm, handleSearch } = useSearch();
 
   const handleChange = (event: { target: { value: string } }) => {
     const value = event.target.value;
-    setSearchTerm(value);
-    onSearch(value);
+    handleSearch(value);
   };
 
   return (

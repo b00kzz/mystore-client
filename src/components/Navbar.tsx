@@ -23,21 +23,23 @@ import { MainNav } from "./main-nav";
 import { useLocale, useTranslations } from "next-intl";
 import { LocaleToggle } from "./locale-toggle";
 import { SetStateAction, useState } from "react";
+import { useSearch } from "./searchContext";
+import { Input } from "./ui/input";
 
 export const Navbar = () => {
   const session = useSession();
   const locale = useLocale();
   const t = useTranslations("NavBar");
-  const [searchValue, setSearchValue] = useState("");
+
+  const { searchTerm, handleSearch } = useSearch();
+
+  const handleChange = (event: { target: { value: string } }) => {
+    handleSearch(event.target.value);
+  };
 
   const handleSignOut = () => {
     removeAccessToken();
     signOut({ callbackUrl: "/", redirect: true });
-  };
-
-  const handleSearch = (value: SetStateAction<string>) => {
-    setSearchValue(value);
-    // ทำอะไรสักอย่างเมื่อมีการเปลี่ยนแปลงค่าค้นหา
   };
 
   if (session.status === "loading") {
@@ -59,7 +61,13 @@ export const Navbar = () => {
         <div className="hidden md:flex ml-2 mx-auto  items-center w-full">
           <MainNav className="mx-6" />
         </div>
-        <Search onSearch={handleSearch} />
+        <Input
+          type="search"
+          placeholder="Search..."
+          className="md:w-[100px] lg:w-[280px] h-8"
+          value={searchTerm}
+          onChange={handleChange}
+        />
         <LocaleToggle />
         <ThemeToggle />
         {session?.data?.user ? (

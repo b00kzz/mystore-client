@@ -5,6 +5,7 @@ import { ReactNode } from "react";
 import { Toaster } from "sonner";
 import { ThemeProvider } from "@/components/theme-provider";
 import MainLayout from "@/components/MainLayout";
+import { SearchProvider } from "@/components/searchContext";
 
 type Props = {
   children: ReactNode;
@@ -28,11 +29,13 @@ export default function LocaleLayout({ children, params: { locale } }: Props) {
           themes={["orange", "green", "light", "dark"]}
         >
           <NextIntlClientProvider locale={locale} messages={messages}>
-            <Navbar />
-            <main className="pt-14">
-              <MainLayout>{children}</MainLayout>
-            </main>
-            <Toaster />
+            <SearchProvider>
+              <Navbar />
+              <main className="pt-14">
+                <MainLayout>{children}</MainLayout>
+              </main>
+              <Toaster />
+            </SearchProvider>
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

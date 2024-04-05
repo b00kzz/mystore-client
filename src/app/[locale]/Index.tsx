@@ -1,7 +1,7 @@
 "use client";
 
 import { Session } from "next-auth";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 import { useRouter } from "next/navigation";
@@ -11,7 +11,6 @@ type Props = {
 };
 
 export default function Index({ session }: Props) {
-  const t = useTranslations("Index");
   const locale = useLocale();
   const pathName = usePathname();
   const router = useRouter();

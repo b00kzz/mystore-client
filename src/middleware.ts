@@ -18,7 +18,7 @@ const authMiddleware = withAuth(
     (req) => intlMiddleware(req),
     {
         callbacks: {
-            authorized: ({ token }) => token == null
+            authorized: ({ token }) => token !== null
         },
         pages: {
             signIn: '/home'
