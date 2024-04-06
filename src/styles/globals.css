@@ -122,6 +122,7 @@
     background-clip: text;
     -webkit-text-fill-color: transparent;
   }
+
   .fix-img {
     aspect-ratio: 2/3;
     object-fit: contain;
