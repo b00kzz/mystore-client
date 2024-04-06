@@ -123,7 +123,7 @@
     -webkit-text-fill-color: transparent;
   }
   .fix-img {
-    aspect-ratio: 10/18;
+    aspect-ratio: 2/3;
     object-fit: contain;
   }
 }

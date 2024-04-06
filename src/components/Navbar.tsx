@@ -54,7 +54,7 @@ export const Navbar = () => {
     );
   }
   return (
-    <div className="fixed top-0 w-full h-14 px-4 border-b shadow-sm flex items-center bg-background">
+    <div className="fixed top-0 w-full h-14 px-4 border-b shadow-sm flex items-center bg-background z-50">
       <MobileSidebar />
       <div className="md:max-w-screen-2xl mx-auto flex items-center space-x-4 w-full justify-between">
         <p className="logo-ds">B&W</p>
