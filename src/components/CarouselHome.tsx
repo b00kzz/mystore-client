@@ -44,13 +44,13 @@ export default function CarouselHome({}: Props) {
       opts={{
         align: "start",
       }}
-      className="w-3/4 z-10"
+      className="w-2/3 z-10"
     >
       <CarouselContent>
         {products.map((product) => (
           <CarouselItem key={product.id} className="md:basis-1/2 lg:basis-1/3 ">
             <div className="p-1">
-              <Card className="w-[85%]">
+              <Card className="">
                 <CardContent className="flex aspect-square items-center justify-center p-6 bg-black/20  rounded-md font-mono">
                   <Image
                     className="hover:scale-125 transition delay-150 "
