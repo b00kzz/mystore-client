@@ -4,6 +4,7 @@ import CardMenu from "@/components/card-menu";
 import { useTranslations } from "next-intl";
 import CarouselHome from "@/components/CarouselHome";
 import { useSearch } from "@/components/searchContext";
+import MenuSlider from "@/components/MenuSlider";
 
 type Props = {};
 
@@ -14,7 +15,8 @@ export default function HomeProduct({}: Props) {
     <>
       <div>
         <div className="flex justify-center items-center">
-          <CarouselHome />
+          {/* <CarouselHome /> */}
+          <MenuSlider />
         </div>
         <div>
           <p className="font-bold p-6">MENU</p>

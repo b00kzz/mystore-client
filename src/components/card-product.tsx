@@ -26,7 +26,10 @@ export default function CardProduct({}: Props) {
   return (
     <Card>
       <CardHeader>
-        <img className="rounded-sm object-contain" src="https://files.gqthailand.com/uploads/mm8.jpg"/>
+        <img
+          className="rounded-sm object-contain"
+          src="https://files.gqthailand.com/uploads/mm8.jpg"
+        />
         <CardTitle>ชานมไข่มุก</CardTitle>
         <CardDescription>Deploy your new project in one-click.</CardDescription>
       </CardHeader>
@@ -38,7 +41,7 @@ export default function CardProduct({}: Props) {
               <Input id="name" placeholder="Name of your project" />
             </div> */}
             <div className="flex flex-col space-y-1.5">
-              <Label htmlFor="framework">ปริมาณน้ำตา %</Label>
+              <Label htmlFor="framework">ปริมาณน้ำตาล %</Label>
               <Select>
                 <SelectTrigger id="framework">
                   <SelectValue placeholder="Select" />
@@ -55,7 +58,7 @@ export default function CardProduct({}: Props) {
         </form>
       </CardContent>
       <CardFooter className="flex justify-between">
-      <Label htmlFor="name">$99</Label>
+        <Label htmlFor="name">$99</Label>
         <Button>Buy</Button>
       </CardFooter>
     </Card>

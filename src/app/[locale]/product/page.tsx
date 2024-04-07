@@ -8,6 +8,7 @@ type Props = {};
 
 export default function HomeProduct({}: Props) {
   const { searchTerm, handleSearch } = useSearch();
+  console.log("🚀 ~ HomeProduct ~ searchTerm:", searchTerm);
   return (
     <>
       <div className="grid gap-4 md:grid-cols-4 lg:grid-cols-5">

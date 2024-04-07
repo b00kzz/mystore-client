@@ -1,0 +1,23 @@
+.swiper-pagination {
+    margin-bottom: -11px;
+    position: relative;
+    bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+    filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+    @apply bg-foreground shadow-lg
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    @apply bg-primary shadow-lg
+}
+
+.swiper {
+    @apply rounded-lg
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+    display: none;
+}
